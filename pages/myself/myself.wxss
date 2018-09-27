@@ -1,0 +1,50 @@
+/* pages/myself/myself.wxss */
+.user-info {
+  width: 100%;
+  height: 210rpx;
+  text-align: center;
+  background-color: #FFCA4E;
+  overflow: hidden;
+}
+.user-head {
+  display: block;
+  margin: 24rpx auto 12rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-name {
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #000000;
+}
+
+.operate-list {
+  padding-top: 25rpx;
+}
+.operate-list navigator {
+  height: 60rpx;
+  padding: 25rpx 30rpx;
+  background-color: #ffffff;
+}
+navigator .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+navigator text {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #000000;
+}
+.right-arrow {
+  float: right;
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 15rpx;
+}

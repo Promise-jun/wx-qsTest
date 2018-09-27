@@ -1,0 +1,8 @@
+<view class='classify-box'>
+  <block wx:for="{{classifyList}}">
+    <view class='classify-item'>
+      <image src="{{item.picUrl}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </block>
+</view>
