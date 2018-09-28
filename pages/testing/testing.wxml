@@ -1,0 +1,11 @@
+<!--pages/testing/testing.wxml-->
+<image class='bg-pic' src='../../image/icon_test_bg@2x.png' mode='bottom'></image>
+<view class='testing-box'>
+  <view class='testing-title'>
+    <image src='../../image/icon_test_title_bg@2x.png'></image>
+    <text>测测你的内心隐藏的多深？</text>
+  </view>
+  <view class='testing-cont'>
+    
+  </view>
+</view>

@@ -1,0 +1,42 @@
+/* pages/testing/testing.wxss */
+.bg-pic {
+  width: 750rpx;
+  height: 1334rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.testing-box {
+  width: 700rpx;
+  padding: 60rpx 25rpx 0;
+  display: flex;
+  flex-direction: column;
+}
+.testing-title {
+  width: 100%;
+  height: 144rpx;
+  position: relative;
+}
+.testing-title image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.testing-title text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 120rpx;
+  padding: 0 150rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-family: PingFangSC-Semibold;
+  font-size: 32rpx;
+  color: #FFFFFF;
+}

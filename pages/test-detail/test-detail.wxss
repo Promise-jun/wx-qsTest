@@ -1,0 +1,83 @@
+/* pages/test-detail/test-detail.wxss */
+
+.detail-box {
+  padding-bottom: 70px;
+}
+.binner {
+  width: 100%;
+  height: 300rpx;
+}
+.binner image {
+  height: 100%;
+}
+
+.detail-info {
+  padding: 50rpx 0 40rpx;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+}
+.detail-info .title {
+  display: block;
+  font-size: 18px;
+  color: #000000;
+  padding-bottom: 14rpx;
+}
+.detail-info .text-num {
+  font-size: 12px;
+  color: #919191;
+  margin-right: 40rpx;
+}
+.detail-info .question-num {
+  font-size: 12px;
+  color: #919191;
+}
+
+.bottom-link {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+}
+.bottom-link navigator {
+  width: 690rpx;
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  margin: 12px auto 0;
+  background-image: linear-gradient(152deg, #FFCA4F 0%, #FFB009 100%);
+  border-radius: 100px;
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #7E4811;
+}
+
+image {
+  display: block;
+  width: 100%;
+}
+
+.collect-box {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 405rpx;
+  background: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+  border-radius: 30px 0 0 30px;
+}
+.collect-box image {
+  width: 15px;
+  height: 15px; 
+  margin-right: 3px;
+}
+.collect-box text {
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #696969;
+}

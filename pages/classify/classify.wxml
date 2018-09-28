@@ -1,5 +1,5 @@
-<view class='classify-box'>
-  <block wx:for="{{classifyList}}">
+<view class='classify-box' bindtap='openTestList'>
+  <block wx:for="{{classifyList}}" wx:key="{{item.id}}">
     <view class='classify-item'>
       <image src="{{item.picUrl}}"></image>
       <text>{{item.title}}</text>

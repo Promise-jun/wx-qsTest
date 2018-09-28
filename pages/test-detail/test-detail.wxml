@@ -1,0 +1,27 @@
+<!--pages/test-detail/test-detail.wxml-->
+<view class='detail-box'>
+  <view class='binner'>
+    <image src="{{detail.binnerPic}}"></image>
+  </view>
+  <view class='detail-info'>
+    <text class='title'>{{detail.title}}</text>
+    <text class='text-num'>{{detail.testNum}}已测</text>
+    <text class='question-num'>共{{detail.questionNum}}题</text>
+  </view>
+  <view class='detail-pic-list'>
+    <block wx:for="{{detail.detailPic}}" wx:key="idx">
+      <image src='{{item}}' mode="widthFix" lazy-load="{{true}}"></image>
+    </block>
+  </view>
+</view>
+
+<view class='collect-box' bindtap='collectTest'>
+  <image wx:if="{{!isCollect}}" src='../../image/icon_collect_nor@2x.png'></image>
+  <image wx:else src='../../image/icon_collect_pre@2x.png'></image>
+  <text wx:if="{{!isCollect}}">收藏</text>
+  <text wx:else>已收藏</text>
+</view>
+
+<view class='bottom-link'>
+  <navigator url="../testing/testing">开始测试</navigator>
+</view>

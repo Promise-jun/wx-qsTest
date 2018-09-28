@@ -1,0 +1,15 @@
+<!--pages/test-list/test-list.wxml-->
+<view class='test-list'>
+  <block wx:for="{{totalList}}" wx:key="{{item.id}}">
+    <navigator url='../test-detail/test-detail' class='list-item'>
+      <view class='left-info'>
+        <text class='title'>{{item.title}}</text>
+        <text class='small-title'>{{item.smallTitle}}</text>
+        <text class='test-num'>{{item.testNum}}已测</text>
+      </view>
+      <view class='right-pic'>
+        <image src="{{item.picUrl}}"></image>
+      </view>
+    </navigator>
+  </block>
+</view>

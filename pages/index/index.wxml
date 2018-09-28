@@ -1,7 +1,8 @@
 <swiper indicator-dots="{{true}}" 
         indicator-color="rgba(255, 255, 255, .5)" 
         indicator-active-color="#fff"
-        autoplay="{{true}}">
+        autoplay="{{true}}"
+        circular="{{true}}">
   <block wx:for="{{swiperUrls}}" wx:key="idx">
     <swiper-item>
       <image src="{{item}}" class="slide-image" />
@@ -11,25 +12,25 @@
 
 <view class='index-test'>
   <view class='head-test'>
-    <view class='left'>
+    <view class='left' bindtap='openRecommend'>
       <image src="../../image/icon_daily special@2x.png"></image>
       <text class='title'>小编每日推荐</text>
       <text class='tool'>13018正在测试</text>
     </view>
     <view class='right'>
-      <view>
+      <view bindtap='openSmallTest'>
         <image src='../../image/icon_major@2x.png'></image>
         <text class='title'>专业小测试</text>
         <text class='tool'>测试你的心理问题</text>
       </view>
-      <view>
+      <view bindtap='openClassify'>
         <image src='../../image/icon_more@2x.png'></image>
         <text class='title'>更多好玩</text>
         <text class='tool'>快来点我吧</text>
       </view>
     </view>
   </view>
-  <view class='foot-test'>
+  <view class='foot-test' bindtap='openTestDetail'>
     <view>
       <image src='../../image/icon_love@2x.png'></image>
       <text class='tool'>爱情测试</text>

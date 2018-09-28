@@ -4,12 +4,12 @@
 </view>
 
 <view class="operate-list">
-  <navigator url="" hover-class="navigator-hover">
+  <navigator url="../test-list/test-list" hover-class="navigator-hover">
     <image class='icon' src='../../image/icon_me_test@2x.png'></image>
     <text>我的测试</text>
     <image class='right-arrow' src='../../image/icon_back@2x.png'></image>
   </navigator>
-  <navigator url="" hover-class="navigator-hover">
+  <navigator url="../test-list/test-list" hover-class="navigator-hover">
     <image class='icon' src='../../image/icon_me_collect@2x.png'></image>
     <text>我的收藏</text>
     <image class='right-arrow' src='../../image/icon_back@2x.png'></image>

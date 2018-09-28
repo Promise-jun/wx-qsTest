@@ -2,7 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/classify/classify",
-    "pages/myself/myself"    
+    "pages/myself/myself",
+    "pages/test-list/test-list",
+    "pages/test-detail/test-detail",
+    "pages/testing/testing"    
   ],
   "window": {
     "navigationBarTitleText": "情说心理测试",
