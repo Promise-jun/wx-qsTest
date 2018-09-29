@@ -1,5 +1,5 @@
 <!--pages/testing/testing.wxml-->
-<image class='bg-pic' src='../../image/icon_test_bg@2x.png' mode='bottom'></image>
+<image class='bg-pic' src='../../image/icon_test_bg@2x.png'></image>
 <view class='testing-box'>
   <view class='testing-title'>
     <image src='../../image/icon_test_title_bg@2x.png'></image>
@@ -7,5 +7,25 @@
   </view>
   <view class='testing-cont'>
     
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view wx:for="{{testList}}" wx:key="{{item.id}}" hidden='{{item.id !== currentId}}'>
+        <view class='questions'>{{item.questions}}</view>
+        <radio-group class="radio-group" name="{{item.id}}" bindchange="radioChange">
+          <label class="radio" wx:for="{{item.options}}" wx:key="idx" class='{{currentOption === item.value ? "radio active-bg" : "radio"}}'>
+            <view class='circle'>
+              <image wx:if="{{currentOption === item.value}}" src='../../image/icon_bule_circle@2x.png'></image>
+            </view>
+            <radio value="{{item.value}}" checked="{{item.checked}}" hidden='{{true}}' />
+            <text>{{item.text}}</text>
+          </label>
+        </radio-group>
+      </view>
+
+      <view class="btn-area">
+        <button class='prev' disabled="{{currentId === 1 ? true : false}}" bindtap='prevTest'>上一题</button>
+        <button class='next' formType="submit">{{currentId === totalNum ? '查看结果' : '下一题'}}</button>      
+      </view>
+    </form>
+
   </view>
 </view>

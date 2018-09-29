@@ -5,7 +5,8 @@
     "pages/myself/myself",
     "pages/test-list/test-list",
     "pages/test-detail/test-detail",
-    "pages/testing/testing"    
+    "pages/testing/testing",
+    "pages/test-result/test-result"    
   ],
   "window": {
     "navigationBarTitleText": "情说心理测试",
@@ -41,6 +42,5 @@
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000
-  },
-  "debug": true
+  }
 }
