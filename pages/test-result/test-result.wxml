@@ -1,2 +1,57 @@
 <!--pages/test-result/test-result.wxml-->
-<text>pages/test-result/test-result.wxml</text>
+<image class='bg-pic' src='../../image/icon_test_bg@2x.png'></image>
+<view class='testing-box'>
+  <view class='testing-title'>
+    <image src='../../image/icon_test_title_bg@2x.png'></image>
+    <text>测测你的内心隐藏的多深？</text>
+  </view>
+  <view class='container'>
+    <view class='result-cont'>
+      <view class='card'>
+        <view class='title'>
+          <image class='icon' src='../../image/icon_bule_circle@2x.png'></image>
+          <text class='name'>您的测试结果</text>
+        </view>
+        <view class='card-cont'>
+          <text class='card-text'>完美型恋人</text>
+        </view>
+      </view>
+      <view class='card'>
+        <view class='title'>
+          <image class='icon' src='../../image/icon_bule_circle@2x.png'></image>
+          <text class='name'>测试说明</text>
+        </view>
+        <view class='card-cont'>
+          <text class='card-text'>看你的左右半球具有较好的平衡性，没有哪一侧有压倒性的优势看你的左右半球具有较好的平衡性，没有哪一侧有压倒性的优势看你的左右半球具有较好的平衡性，没有哪一侧有压倒性的优势看你的左右半球具有较好的平衡性，没有哪一侧有压倒性的优势</text>
+        </view>
+      </view>
+
+      <view class="btn-area">
+        <button class='retest' bindtap='retest' plain="true">重新测试</button>
+        <button open-type="share">分享结果</button>      
+      </view>
+    </view>
+    <view class='test-list'>
+      <view class='card'>
+        <view class='title'>
+          <image class='icon' src='../../image/icon_bule_circle@2x.png'></image>
+          <text class='name'>大家都在测</text>
+        </view>
+        <view class='card-cont'>
+          <block wx:for="{{totalList}}" wx:key="{{item.id}}">
+            <navigator url='../test-detail/test-detail' class='list-item'>
+              <view class='left-info'>
+                <text class='title'>{{item.title}}</text>
+                <text class='small-title'>{{item.smallTitle}}</text>
+                <text class='test-num'>{{item.testNum}}已测</text>
+              </view>
+              <view class='right-pic'>
+                <image src="{{item.picUrl}}"></image>
+              </view>
+            </navigator>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
